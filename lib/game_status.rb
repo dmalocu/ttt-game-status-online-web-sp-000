@@ -51,8 +51,8 @@ def over?(board)
   end
 end 
 
-def winner(board)
-  if board(WIN_COMBINATIONS) == "X" 
+def winner(board, index)
+  if won?(board) && board[index] == "X"
     return true
   elsif board(WIN_COMBINATIONS) == "O"
     return true

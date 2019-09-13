@@ -19,7 +19,7 @@ def won?(board)
   if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     return false 
   end
-  WIN_COMBINATIONS.each |win_combination| do
+  WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
@@ -33,5 +33,5 @@ def won?(board)
     else 
       false 
     end
-
+  end
 end

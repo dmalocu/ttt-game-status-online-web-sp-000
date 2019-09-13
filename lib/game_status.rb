@@ -52,9 +52,9 @@ def over?(board)
 end 
 
 def winner(board, index)
-  if won?(board) && board[index] == "X"
+  if won?(board) && WIN_COMBINATIONS[index]["X"]
     return true
-  elsif won?(board) && board[index] == "O"
+  elsif won?(board) && WIN_COMBINATIONS[index]["O"]
     return true
   else
     nil

@@ -21,4 +21,6 @@ def won?(board)
   position_2 = board[index_1]
   position_3 = board[index_2]
   
+  if p
+  
 end 

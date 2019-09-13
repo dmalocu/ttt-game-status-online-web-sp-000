@@ -52,8 +52,6 @@ def over?(board)
 end 
 
 def winner(board)
-  index = board[index]
-  if board(WIN_COMBINATIONS) && board[index] == "X"
+  if position_taken?(board, index) == "X" && won?(board)
     return true
-  end
 end

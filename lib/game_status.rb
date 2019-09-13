@@ -56,7 +56,10 @@ def winner(board)
     return true
   elsif board(WIN_COMBINATIONS) == "O"
     return true
+  end
+  if full?(board) || draw?(board) && over?(board)
+    return true
   else 
-    nil
+    nil 
   end
 end 

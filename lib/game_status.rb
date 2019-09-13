@@ -54,6 +54,7 @@ end
 def winner(board, index)
   if won?(board) && board[index] == "X"
     return true
+  end
   elsif board(WIN_COMBINATIONS) == "O"
     return true
   end

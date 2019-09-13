@@ -54,8 +54,10 @@ end
 def winner(board, index)
   if won?(board) && board[index] == "X"
     return true
-  elsif board(WIN_COMBINATIONS) == "O"
+  elsif won?(board) && board[index] == "O"
     return true
+  else
+    nil
   end
 end
   

@@ -27,6 +27,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.each do |spot|
-    if board.any?
+  board.any? do |spot|
+    if spot == "" || spot == " " || spot == nil 
+      return false
+    end 
+  end 
+  true 
 end

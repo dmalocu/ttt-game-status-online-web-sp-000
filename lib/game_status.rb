@@ -54,5 +54,6 @@ end
 def winner(board)
   index = board[index]
   if board(WIN_COMBINATIONS) && board[index] == "X"
-    return true 
+    return true
+  end
 end

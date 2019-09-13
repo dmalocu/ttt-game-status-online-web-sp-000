@@ -52,5 +52,11 @@ def over?(board)
 end 
 
 def winner(board)
-  
+  if board(WIN_COMBINATIONS) == "X" 
+    return true
+  elsif board(WIN_COMBINATIONS) == "O"
+    return true
+  else 
+    nil
+  end
 end 

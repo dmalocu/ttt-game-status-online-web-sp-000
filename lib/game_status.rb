@@ -18,3 +18,4 @@ WIN_COMBINATIONS = [
 def won?(board)
   
 end 
+return WIN_COMBINATIONS[0]

@@ -52,7 +52,7 @@ def over?(board)
 end 
 
 def winner(board)
-  if won?(board) == "X"
+  if won?(board) == WIN_COMBINATIONS.any? 
     return "X" 
   end
 end

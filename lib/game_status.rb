@@ -27,3 +27,6 @@ def won?(board)
 end
 
 def full?(board)
+  board.each do |spot|
+    if board.any?
+end

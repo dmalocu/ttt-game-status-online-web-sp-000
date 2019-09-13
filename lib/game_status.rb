@@ -56,6 +56,7 @@ def winner(board)
       if spot == "X"
         return true
       end 
-    return true 
+    return true
+  end
   end 
 end 

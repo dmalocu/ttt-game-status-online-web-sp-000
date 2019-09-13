@@ -51,13 +51,17 @@ def over?(board)
   end
 end 
 
-def winner(board, index)
-  if won?(board) && WIN_COMBINATIONS[index]["X"]
-    return true
-  elsif won?(board) && WIN_COMBINATIONS[index]["O"]
-    return true
+def winner
+  index = []
+  index = won?
+  if index == false
+    return nil
   else
-    nil
+    if @board[index[0]] == "X"
+      return "X"
+    else
+      return "O"
+    end
   end
 end
   

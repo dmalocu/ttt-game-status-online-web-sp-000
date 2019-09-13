@@ -52,7 +52,7 @@ def over?(board)
 end 
 
 def winner(board)
-  if position_taken?(board, index) == "X" && won?(board)
-    return true
+  if won?(board) == "X"
+    return true 
   end
 end

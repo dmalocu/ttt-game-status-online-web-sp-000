@@ -54,4 +54,5 @@ end
 def winner(board)
   if position_taken?(board, index) == "X" && won?(board)
     return true
+  end
 end

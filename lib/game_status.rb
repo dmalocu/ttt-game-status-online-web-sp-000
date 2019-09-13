@@ -18,5 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     return false 
-  end 
+  end
+  WIN_COMBINATIONS.each |win_combination| do
+    win_index_1 = win_combination[0]
 end

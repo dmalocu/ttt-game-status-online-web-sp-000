@@ -52,11 +52,7 @@ def over?(board)
 end 
 
 def winner(board)
-  if won?(board) && board.any? do |spot|
-      if spot.all? == "X"
-        return true
-      end 
-    return true
+  if won?(board).all? == "X"
+    return "X"
   end
-  end 
-end 
+end
